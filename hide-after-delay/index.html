@@ -1,0 +1,43 @@
+<html>
+<head>
+  <style>
+    .tbl {
+      background: black;
+      display: grid;
+      font-size: 40pt;
+      grid-template-columns: repeat(10, 1.2em);
+      width: 12.9em;
+      padding: 0.1em;
+      grid-row-gap: 0.1em;
+      grid-column-gap: 0.1em;
+    }
+    .cell {
+      height: 1.2em;
+      background: black;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .cell-with-value {
+      cursor: pointer;
+    }
+    .hidden .cell-with-value {
+      background: white;
+    }
+    .input-range-label {
+      display: none;
+    }
+    .input-range-label.input-range-label--current-value {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <main></main>
+  <script>
+    var app = Elm.Main.init({ node: document.querySelector('main') })
+    // you can use ports and stuff here
+  </script>
+</body>
+</html>
+
